@@ -1,0 +1,28 @@
+@mixin sml {
+  @media (min-width: 576px) {
+     @content;
+   }
+}
+
+@mixin med {
+  @media (min-width:768px) {
+    @content;
+  }
+}
+
+
+@mixin lrg {
+  @media (max-width: 1175px) {
+     @content;
+   }
+}
+@mixin xlrg {
+  @media (min-width:1200px) {
+    @content;
+  }
+}
+@mixin xxlrg {
+  @media (min-width:1800px) {
+    @content;
+  }
+}

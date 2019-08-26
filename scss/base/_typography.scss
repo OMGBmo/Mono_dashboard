@@ -1,0 +1,46 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Futura HV';
+    margin: 0;
+}
+
+h1 {
+  font-size: 61.04px;
+  line-height: 1.37;
+  @include lrg {
+    font-size: 48px;
+  }
+  @include sml {
+    font-size: 38px;
+  }
+}
+
+h3 {
+  font-size: 25px;
+  color:color(color-tittle);
+}
+
+h4 {
+  font-size: 20px;
+  color:color(color-tittle);
+}
+
+p {
+    margin: 0;
+}
+
+ol, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {}
+a:hover {
+}
+a:focus {
+    outline: 0;
+}

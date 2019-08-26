@@ -1,0 +1,22 @@
+// Colors
+$colors:(
+
+    primary-color: #000000,
+    secundary-color: #FF7616,
+
+    color-tittle: #35384D,
+    color-text: #9DA8B6,
+
+    color-selected: #fff,
+    color-rise: #5BB09C,
+    color-fall: #DD4545,
+
+    color-background: #F8F8F8,
+    color-background-selected:#0052B4,
+    color-border: #E6E6E6,
+    color-accent:#0052B4,
+  );
+
+@function color ($color-name) {
+  @return map-get($colors, $color-name)
+};
