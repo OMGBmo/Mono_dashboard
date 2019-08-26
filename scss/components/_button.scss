@@ -1,0 +1,24 @@
+.button {
+  display: block;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  text-align: center;
+  padding: 10px;
+  &--text-color {
+    color: color(color-selected)!important;
+  }
+  &--lrg {
+    width: 235px;
+  }
+  &--primary {
+    background-color:color(color-accent);
+    &:hover {
+      background-color: #054797;
+    }
+  }
+  &--next {
+    background-size: 10px;
+    background-image: url('../../images/icons/arrow_next.svg');
+    background-repeat: no-repeat;
+  }
+}

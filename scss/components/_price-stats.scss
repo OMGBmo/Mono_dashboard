@@ -1,0 +1,15 @@
+.price-stats {
+  background-color: color(color-selected);
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 48px;
+}
+.border-line {
+  width: 1px;
+  height: 270px;
+  margin: 0px 15px;
+  background-color: color(color-border);
+  @include med {
+    display: none;
+  }
+}
