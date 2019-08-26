@@ -1,0 +1,10 @@
+.justify {
+  &--content {
+    &--btw {
+        justify-content: space-between;
+    }
+    &--unset {
+      justify-content: unset;
+    }
+  }
+}

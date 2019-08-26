@@ -1,0 +1,50 @@
+.text {
+  &--small {
+    font-size: 13px;
+  }
+  &--normal {
+    font-size: 16px;
+  }
+  &--big {
+    font-size: 20px;
+  }
+
+&--wght {
+  &--regular {
+    font-family: 'Futura BK';
+    font-weight: 500;
+  }
+  &--medium {
+    font-family: 'Futura MD';
+  }
+  &--heavy {
+    font-family: 'Futura HV';
+  }
+}
+
+  &--color {
+    &--base {
+      color:color(color-text);
+    }
+    &--selected {
+      color:color(color-selected);
+    }
+    &--rise {
+      color:color(color-rise);
+    }
+    &--fall {
+      color:color(color-fall);
+    }
+    &--tittle {
+      color: color(color-tittle);
+    }
+    &--blue {
+      color:color(color-accent);
+    }
+  }
+  &--align {
+    &--center {
+      text-align: center;
+    }
+  }
+}

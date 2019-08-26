@@ -1,0 +1,20 @@
+.pos {
+	&--rel {
+		position: relative;
+	}
+
+	&--fix {
+		position: fixed;
+	}
+
+	&--abs {
+		position: absolute;
+    &--right {
+      right:0;
+    }
+		&--center {
+			top: 50%;
+			bottom:50%;
+		}
+	}
+}

@@ -1,0 +1,55 @@
+.pg {
+  &--reset {
+    padding:0;
+  }
+
+  &--top {
+    &--xxs {
+      padding-top: 10px;
+    }
+    &--xs {
+      padding-top: 15px;
+    }
+    &--s {
+      padding-top: 20px;
+    }
+    &--med {
+      padding-top: 40px;
+    }
+    &--lrg {
+      padding-top: 55px;
+    }
+  }
+
+  &--right {
+    &--xxs {
+      padding-right: 10px;
+    }
+    &--xs {
+      padding-right: 15px;
+    }
+    &--s {
+      padding-right: 20px;
+    }
+    &--m {
+      padding-right: 25px;
+    }
+  }
+  &--left {
+    &--xxs {
+      padding-left: 10px;
+    }
+    &--xs {
+      padding-left: 15px;
+    }
+    &--s {
+      padding-left: 20px;
+    }
+    &--m {
+      padding-left: 25px;
+    }
+    &--lrg {
+      padding-left: 100px;
+    }
+  }
+}

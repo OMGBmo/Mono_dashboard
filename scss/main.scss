@@ -10,3 +10,17 @@
 //Base/Bare HTML Elements
 @import 'base/global';
 @import 'base/typography';
+
+//Components
+@import 'components/sidebar';
+@import 'components/navbar';
+
+
+//Utilities
+@import 'utilities/display';
+@import 'utilities/justify';
+@import 'utilities/position';
+@import 'utilities/text';
+@import 'utilities/spacers';
+@import 'utilities/padders';
+@import 'utilities/bootstrap.reset';

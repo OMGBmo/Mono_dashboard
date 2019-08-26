@@ -1,0 +1,13 @@
+.d {
+  &--in-t {
+    display: inline-table;
+  }
+  &--f {
+    display: flex;
+  }
+}
+.d {
+  &--b {
+    display: block;
+  }
+}

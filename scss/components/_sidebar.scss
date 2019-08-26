@@ -1,0 +1,24 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 85px 10px 0;
+  background-color: white;
+  &__item {
+    margin-bottom: 15px;
+  }
+  &__link {
+    padding: 15px;
+    &--selected {
+      background-color: color(secundary-color);
+      border-radius: 10px;
+      &--svg {
+        path {
+          fill:white;
+        }
+      }
+    }
+  }
+}
