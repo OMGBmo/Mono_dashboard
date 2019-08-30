@@ -21,4 +21,11 @@
     background-image: url('../../images/icons/arrow_next.svg');
     background-repeat: no-repeat;
   }
+  &--dropdown {
+    background-size: 10px;
+    background-image: url('../../images/icons/arrow_down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px 0px 0px 35px;
+  }
 }

@@ -1,0 +1,39 @@
+.card {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.0250765);
+  &__list {
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__image {
+      padding-right: 15px;
+    }
+    &__name {
+      width: 100%;
+      max-width: 125px;
+      min-width: 0px;
+    }
+    &__address {
+      width: 100%;
+      max-width: 250px;
+      min-width: 0px;
+    }
+    &--padding {
+      padding: 23px 0px;
+    }
+  }
+  &--no-bg {
+    background-color: transparent;
+  }
+  &--no-br {
+    border: none;
+  }
+  &--selected {
+    height: 235px;
+    background-color:color(color-background-selected);
+  }
+  @include lrg {
+    border-radius: 12.8px;
+    margin-bottom: 20px;
+  }
+}

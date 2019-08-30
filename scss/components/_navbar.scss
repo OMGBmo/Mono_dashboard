@@ -1,4 +1,7 @@
 .navbar {
   border-bottom: 1px solid color(color-border);
   background-color: color(color-background);
+  @include med {
+    display: none;
+  }
 }

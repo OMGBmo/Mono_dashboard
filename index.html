@@ -9,12 +9,15 @@
   <meta name="description" content="description here">
   <meta name="keywords" content="keywords,here">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
   </head>
 
   <body>
+
+<!-- Navbar section -->
   <nav class="navbar fixed-top flex-md-nowrap justify--content--unset">
       <div class="col-sm-1 mr-0 flex-md-nowrap pg--left--xxs">
         <a class="navbar-brand">
@@ -31,12 +34,37 @@
             </a>
         </div>
         <div>
-          <a href="#" >
+          <a class="pg--left--xs" href="#" >
             <img src="images/avatars/user_icon.png" />
           </a>
         </div>
       </div>
   </nav>
+<!-- End Navbar section -->
+
+<!-- Navbar Mobile section -->
+  <nav class="navbar fixed-top flex-md-nowrap justify--content--btw mobile-menu">
+      <button class="hamburger button button--sidebar">
+        <span class="hamburger-box">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <div class="float-right d--f">
+        <div>
+            <a href="#">
+              <img src="images/icons/notif_icon.svg" />
+            </a>
+        </div>
+        <div>
+          <a class="pg--left--xs" href="#" >
+            <img src="images/avatars/user_icon.png" />
+          </a>
+        </div>
+      </div>
+  </nav>
+<!-- End Navbar Mobile section -->
 
 <!-- Sidebar Section --->
   <div class="container-fluid">
@@ -46,7 +74,7 @@
           <ul class="flex-column">
             <li class="sidebar__item">
               <a class="sidebar__link sidebar__link--selected d--b spacer--center" href="#">
-                <svg class="sidebar__link--selected--svg d--b spacer--center" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="d--b spacer--center" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.9978 3.00226C16.7323 2.73683 16.3156 2.69769 16.0053 2.90913C14.8363 3.70593 8.97288 7.71261 8.34272 8.34273C7.42889 9.25659 7.42889 10.7435 8.34272 11.6573C8.79963 12.1142 9.39987 12.3427 10 12.3427C10.6002 12.3427 11.2004 12.1142 11.6573 11.6573C12.2874 11.0272 16.2941 5.16374 17.0909 3.99476C17.3023 3.68449 17.2632 3.26777 16.9978 3.00226ZM10.5524 10.5525C10.2478 10.8571 9.75217 10.8571 9.4476 10.5525C9.14299 10.2479 9.14295 9.75238 9.44745 9.44777C9.69229 9.20581 11.357 8.01855 13.4052 6.59484C11.9815 8.64304 10.7943 10.3077 10.5524 10.5525Z" fill="#B7BACF"/>
                 <path d="M3.60277 13.6338L2.63832 14.1042C1.93262 12.8448 1.5625 11.439 1.5625 10C1.5625 8.94566 1.75691 7.93586 2.11172 7.00457L3.21684 7.53465C3.32582 7.58691 3.44086 7.61168 3.55418 7.61168C3.84531 7.61168 4.1248 7.4482 4.25914 7.16812C4.4457 6.7791 4.28164 6.31242 3.89258 6.12582L2.80148 5.60246C4.15762 3.39074 6.50398 1.84875 9.21879 1.59836V2.7734C9.21879 3.20488 9.56855 3.55465 10 3.55465C10.4315 3.55465 10.7813 3.20488 10.7813 2.7734V1.59777C11.7121 1.6825 12.6127 1.91953 13.4677 2.30547C13.8608 2.48301 14.3236 2.30805 14.5011 1.91488C14.6787 1.5216 14.5038 1.05891 14.1105 0.881367C12.815 0.296562 11.432 0 10 0C7.32891 0 4.8177 1.04016 2.92891 2.92891C1.0402 4.8177 0 7.32891 0 10C0 11.9738 0.585859 13.8935 1.69426 15.5514C1.84355 15.7746 2.09039 15.8985 2.34422 15.8985C2.45961 15.8985 2.57648 15.8729 2.68629 15.8193L4.28785 15.0381C4.67566 14.8489 4.83668 14.3812 4.6475 13.9934C4.45832 13.6056 3.99059 13.4446 3.60277 13.6338Z" fill="#B7BACF"/>
                 <path d="M19.1186 5.88955C18.9411 5.49631 18.4785 5.32131 18.0851 5.49892C17.6919 5.67646 17.517 6.13916 17.6945 6.5324C18.1876 7.62451 18.4375 8.79119 18.4375 10C18.4375 11.4412 18.0662 12.8492 17.3584 14.1101L16.3515 13.6306C15.962 13.4451 15.4958 13.6105 15.3103 14.0001C15.1248 14.3896 15.2902 14.8558 15.6798 15.0413L17.3204 15.8226C17.4283 15.874 17.5427 15.8985 17.6559 15.8985C17.9098 15.8985 18.1566 15.7745 18.3057 15.5514C19.4142 13.8935 20 11.9738 20 10C20 8.56802 19.7035 7.18506 19.1186 5.88955Z" fill="#B7BACF"/>
@@ -83,36 +111,69 @@
       </nav>
     </div>
   </div>
-      <!-- End Sidebar section -->
-      <div class="container-fluid pg--top--lrg pg--left--lrg">
+<!-- End Sidebar section -->
+      <div class="container-fluid">
         <div class="col-lg-12">
           <div class="row">
-              <div class="col-lg-8">
+              <div class="col-lg-9">
                 <!-- Fuel Types -->
-                  <div class="row justify--content--btw">
-                    <div class="box box--selected col-lg-3">
-                      <h4 class="text--color--selected" >Dieses Fuel</h4>
-                      <h3 class="text--color--selected">$1.05</h3>
-                      <p class="text--color--selected text--wght--medium text--small">AVG PRICE</p>
-                      <canvas id="box-chart" width="235" height="100"></canvas>
+                  <div class="row">
+                    <div class="col-lg-3 fuel__cards">
+                      <div class="card card--selected pg--all--xs border--down--left--right">
+                        <h4 class="text--color--selected" >Dieses Fuel</h4>
+                        <h3 class="text--color--selected">$1.05</h3>
+                        <p class="text--color--selected text--wght--medium text--small spacer--down--xsml">AVG PRICE</p>
+                        <div class="col-lg-12 pg--reset spacer--up--med">
+                          <svg viewBox="0 0 309 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="309" height="66">
+                          <rect x="0.596985" width="308" height="66" fill="white"/>
+                          </mask>
+                          <g mask="url(#mask0)">
+                          <path d="M12.0923 42.8131L12.0767 43.813C12.0819 43.8131 12.0871 43.8131 12.0923 43.8131L12.0923 42.8131ZM35.9335 44.5398L35.9667 45.5393L35.9335 44.5398ZM86.867 10L86.8654 11H86.867V10ZM103.122 26.1186L102.212 26.5323C102.225 26.5617 102.24 26.5904 102.256 26.6183L103.122 26.1186ZM157.307 61.2339L157.34 60.2345C157.323 60.2339 157.306 60.2338 157.29 60.2341L157.307 61.2339ZM188.734 48.5693L188.079 47.8137C188.069 47.8224 188.059 47.8314 188.049 47.8406L188.734 48.5693ZM-52.2347 73.6437C-48.5366 69.2471 -39.7357 61.6575 -28.1766 55.2257C-16.6234 48.7972 -2.42327 43.5864 12.0767 43.813L12.1079 41.8132C-2.8685 41.5792 -17.4216 46.9526 -29.149 53.478C-40.8705 60.0001 -49.8775 67.7342 -53.7653 72.3563L-52.2347 73.6437ZM12.0923 43.8131C15.0913 43.8131 18.9537 44.3015 23.1736 44.771C27.3534 45.2359 31.8441 45.6762 35.9667 45.5393L35.9003 43.5404C31.9388 43.6719 27.5793 43.2487 23.3948 42.7832C19.2504 42.3222 15.2342 41.8131 12.0923 41.8131L12.0923 43.8131ZM35.9667 45.5393C41.9949 45.3392 56.062 41.5037 64.9482 27.8144L63.2707 26.7254C54.8179 39.747 41.4314 43.3568 35.9003 43.5404L35.9667 45.5393ZM64.9482 27.8144C73.5228 14.6053 81.7137 10.9921 86.8654 11L86.8685 9.00002C80.764 8.99068 72.0351 13.2238 63.2707 26.7254L64.9482 27.8144ZM86.867 11C89.6656 11 96.2247 13.356 102.212 26.5323L104.033 25.7049C97.8826 12.17 90.7772 9 86.867 9.00001V11ZM102.256 26.6183C105.745 32.666 112.653 41.6605 122.091 49.0959C131.531 56.5324 143.58 62.4693 157.324 62.2338L157.29 60.2341C144.158 60.4591 132.547 54.7868 123.329 47.5248C114.109 40.2616 107.363 31.4682 103.989 25.6189L102.256 26.6183ZM157.274 62.2334C163.25 62.4318 177.909 60.1149 189.419 49.298L188.049 47.8406C177.018 58.2082 162.923 60.4198 157.34 60.2345L157.274 62.2334ZM189.389 49.325C196.275 43.357 205.728 34.7798 216.822 27.6803C227.919 20.5793 240.551 15.0295 253.755 15.0295V13.0295C240.003 13.0295 226.987 18.8011 215.744 25.9957C204.499 33.1919 194.92 41.8847 188.079 47.8137L189.389 49.325ZM253.755 15.0295C267.023 15.0295 276.376 18.8663 286.945 22.8718C297.528 26.8829 309.226 31.0137 326.98 31.3637L327.02 29.3641C309.607 29.0208 298.162 24.9844 287.653 21.0016C277.13 17.0132 267.444 13.0295 253.755 13.0295V15.0295Z" fill="white"/>
+                          <path opacity="0.16" d="M256.573 22.4876C261.266 22.4876 265.146 18.8382 265.146 14.2438C265.146 9.64944 261.266 6 256.573 6C251.881 6 248 9.64944 248 14.2438C248 18.8382 251.881 22.4876 256.573 22.4876Z" stroke="white" stroke-width="2"/>
+                          <g filter="url(#filter0_d)">
+                          <ellipse cx="256.574" cy="14.245" rx="4.41765" ry="4.22558" fill="white"/>
+                          <path d="M258.991 14.245C258.991 15.3913 257.993 16.4706 256.574 16.4706C255.154 16.4706 254.156 15.3913 254.156 14.245C254.156 13.0987 255.154 12.0194 256.574 12.0194C257.993 12.0194 258.991 13.0987 258.991 14.245Z" stroke="white" stroke-width="4"/>
+                          </g>
+                          </g>
+                          <defs>
+                          <filter id="filter0_d" x="250.156" y="9.01944" width="12.8353" height="12.4512" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                          <feOffset dy="1"/>
+                          <feGaussianBlur stdDeviation="1"/>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0.215686 0 0 0 0 0.317647 0 0 0 0 1 0 0 0 0.2 0"/>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                          </filter>
+                          </defs>
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <div class="box col-lg-3">
-                      <h4 class="spacer--up--sml spacer--down--med">Fuel Oil</h4>
-                      <h3>$1.05</h3>
-                      <p class="text--color--base text--wght--medium  text--small">AVG PRICE</p>
-                      <p class="text--color--fall text--wght--medium text--base">-1.05%</p>
+                    <div class="col-lg-3">
+                      <div class="card pg--all--xs border--down--left--right">
+                        <h4 class="spacer--down--med">Fuel Oil</h4>
+                        <h3>$1.05</h3>
+                        <p class="text--color--base text--wght--medium  text--small spacer--down--xsml">AVG PRICE</p>
+                        <p class="text--color--fall text--wght--medium text--base">-1.05%</p>
+                      </div>
                     </div>
-                    <div class="box col-lg-3">
-                      <h4 class="spacer--up--sml spacer--down--med">Motor Gasoline</h4>
-                      <h3>$1.05</h3>
-                      <p class="text--color--base text--wght--medium  text--small">AVG PRICE</p>
-                      <p class="text--color--fall text--wght--medium text--base">-1.05%</p>
+                    <div class="col-lg-3">
+                      <div class="card pg--all--xs border--down--left--right">
+                        <h4 class="spacer--down--med">Motor Gasoline</h4>
+                        <h3>$1.05</h3>
+                        <p class="text--color--base text--wght--medium  text--small spacer--down--xsml">AVG PRICE</p>
+                        <p class="text--color--fall text--wght--medium text--base">-1.05%</p>
+                      </div>
                     </div>
-                    <div class="box col-lg-3">
-                      <h4 class="spacer--up--sml spacer--down--med">Autogas</h4>
-                      <h3>$1.05</h3>
-                      <p class="text--color--base text--wght--medium  text--small">AVG PRICE</p>
-                      <p class="text--color--rise text--wght--medium text--base">+1.05%</p>
+                    <div class="col-lg-3">
+                      <div class="card pg--all--xs border--down--left--right">
+                        <h4 class="spacer--down--med">Autogas</h4>
+                        <h3>$1.05</h3>
+                        <p class="text--color--base text--wght--medium  text--small spacer--down--xsml">AVG PRICE</p>
+                        <p class="text--color--rise text--wght--medium text--base">+1.05%</p>
+                      </div>
                     </div>
                   </div>
                 <!-- End Fuel Types -->
@@ -120,16 +181,17 @@
 
                 <!-- Price Statistics -->
                   <div class="row">
-                    <div class="col-lg-12 price-stats">
-                      <h4>Price Statistics</h4>
+                    <div class="col-lg-12">
+                      <div class="card pg--all--med spacer--up--med border--all">
+                      <h4 class="spacer--down--xsml">Price Statistics</h4>
                       <div class="row">
-                        <div class="col-lg-7 price-stats__chart pg--top--med" >
+                        <div class="col-lg-7 pg--top--med" >
                           <canvas id="fuel-chart" width="400" height="200"></canvas>
                         </div>
                         <div class="col-lg-1">
                             <div class="border-line"></div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 order-first order-lg-last">
                           <img src="images/svg/illustration_2.svg" width="200" class="d--b spacer--center"/>
                           <p class="text text--small text--align--center text--wght--medium text--color--blue spacer--down--sml">
                             Find the best gas prices in your state to maximize savings at the pump.
@@ -194,11 +256,11 @@
                               </ul>
                             </div>
                             <div class="pg--right--xs pg--left--xs">
-                              <img src="images/avatars/total_avatar.png" class="pg--top--xs pg--right--xxs" />
+                              <img src="images/avatars/shell_avatar.png" class="pg--top--xs pg--right--xxs" />
                               <ul class="d--in-t">
                                 <li>
                                   <p class="text--small text--color--tittle text--wght--heavy">
-                                    TOTAL
+                                    SHELL
                                     <span class="text--small text--color--fall text--wght--medium">
                                       -6%
                                     </span>
@@ -212,21 +274,22 @@
                               </ul>
                             </div>
                             <div class="col-lg-1">
-                              <img src="images/avatars/shell_avatar.png" class="pg--top--xs pg--right--xxs" />
+                              <img src="images/avatars/total_avatar.png" class="pg--top--xs pg--right--xxs" />
                             </div>
                             <div class="col-lg-1">
                               <a class="button button--next pos--abs pos--abs--center" href="#"></a>
                             </div>
                           </div>
                         </div>
+                      </div>
                     </div>
                   </div>
                 <!-- End Price Statistics -->
               </div>
               <!-- Sales Report Section -->
-              <div class="col-lg-4">
+              <div class="col-lg-3">
                 <div class="sales-report">
-                  <h4 class="spacer--up--sml">Sales Report</h4>
+                  <h4>Sales Report</h4>
                     <table class="table">
                       <thead>
                         <tr>
@@ -297,47 +360,6 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-  <script>
-    var ctx = document.getElementById('box-chart');
-    var boxChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-  labels: [1.5,1.6,1.7,1.7,1.8,1.8,1.9,1.9,1.9,2.0],
-  datasets: [{
-      data: [1.5,1.6,1.7,1.7,1.8,1.8,1.9,1.9,1.9,2.0],
-      label: "Fuel Price",
-      borderColor: "#fff",
-      fill: false
-    },
-  ]
-},
-options: {
-  legend: {
-    display:false,
-  },
-  scales: {
-    xAxes: [{
-      gridLines: {
-        color: "rgba(0, 0, 0, 0)",
-      },
-      ticks: {
-        display: false
-    },
-   }],
-    yAxes: [{
-        gridLines: {
-            color: "rgba(0, 0, 0, 0)",
-        },
-        ticks: {
-          display: false
-      },
-
-      }
-    ],
-  }
-}
-});
-  </script>
   <script>
     var ctx = document.getElementById('fuel-chart');
     var myChart = new Chart(ctx, {

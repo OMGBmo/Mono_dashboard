@@ -1,0 +1,12 @@
+.container-fluid {
+  padding-left: 85px;
+  padding-top: 28px;
+  @include lrg {
+    padding-top: 40px;
+  }
+  @include med {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 40px;
+  }
+}

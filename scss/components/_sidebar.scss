@@ -14,11 +14,14 @@
     &--selected {
       background-color: color(secundary-color);
       border-radius: 10px;
-      &--svg {
+      svg {
         path {
           fill:white;
         }
       }
     }
+  }
+  @include med {
+    display: none;
   }
 }

@@ -2,6 +2,32 @@
   &--reset {
     padding:0;
   }
+  &--all {
+    &--xxs {
+      padding: 10px;
+    }
+    &--xs {
+      padding: 15px;
+    }
+    &--s {
+      padding: 20px;
+    }
+    &--med {
+      padding: 40px;
+      @include lrg {
+        padding: 15px;
+      }
+    }
+    &--lrg {
+      padding: 55px;
+    }
+    &--not--down {
+      padding: 40px 40px 0px 40px;
+      @include lrg {
+        padding: 15px;
+      }
+    }
+  }
 
   &--top {
     &--xxs {
@@ -49,7 +75,7 @@
       padding-left: 25px;
     }
     &--lrg {
-      padding-left: 100px;
+      padding-left: 85px;
     }
   }
 }

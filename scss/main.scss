@@ -12,12 +12,13 @@
 @import 'base/typography';
 
 //Components
+@import 'components/container-fluid';
 @import 'components/navbar';
 @import 'components/sidebar';
 @import 'components/button';
-@import 'components/box';
+@import 'components/card';
 @import 'components/sales-report';
-@import 'components/price-stats';
+@import 'components/mobile-menu';
 
 //Utilities
 @import 'utilities/display';
@@ -26,4 +27,5 @@
 @import 'utilities/text';
 @import 'utilities/spacers';
 @import 'utilities/padders';
+@import 'utilities/border-radius';
 @import 'utilities/bootstrap.reset';

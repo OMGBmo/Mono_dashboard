@@ -7,17 +7,26 @@
       margin-bottom: 25px;
     }
     &--med {
-      margin-bottom: 40px;
+      margin-bottom: 48px;
     }
   }
   &--up {
     &--sml {
       margin-top: 25px;
     }
+    &--med {
+      margin-top: 48px;
+    }
+    &--lrg {
+      margin-top: 103px;
+      @include lrg {
+        margin-top: 20px;
+      }
+    }
   }
   &--left {
     &--lrg {
-      margin-left: 85px;
+      margin-left: 88px;
     }
   }
   &--center {

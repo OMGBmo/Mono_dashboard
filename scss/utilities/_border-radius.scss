@@ -1,0 +1,9 @@
+.border {
+  &--all {
+    border-radius: 10px;
+  }
+  &--down--left--right {
+    border-bottom-left-radius:12.8px;
+    border-bottom-right-radius:12.8px;
+  }
+}

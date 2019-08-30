@@ -15,3 +15,7 @@ body {
   background-color: color(color-background);
   height: 100%;
 }
+
+button:focus {
+  outline: 0;
+}

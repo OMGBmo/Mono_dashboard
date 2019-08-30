@@ -5,19 +5,19 @@
 }
 
 @mixin med {
-  @media (min-width:768px) {
+  @media (max-width:768px) {
     @content;
   }
 }
 
 
 @mixin lrg {
-  @media (max-width: 1175px) {
+  @media (max-width: 991px) {
      @content;
    }
 }
 @mixin xlrg {
-  @media (min-width:1200px) {
+  @media (max-width:1215px) {
     @content;
   }
 }

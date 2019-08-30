@@ -34,6 +34,9 @@ body {
   background-color: #F8F8F8;
   height: 100%; }
 
+button:focus {
+  outline: 0; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Futura HV';
   margin: 0; }
@@ -41,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 61.04px;
   line-height: 1.37; }
-  @media (max-width: 1175px) {
+  @media (max-width: 991px) {
     h1 {
       font-size: 48px; } }
   @media (min-width: 576px) {
@@ -70,9 +73,24 @@ a {
 a:focus {
   outline: 0; }
 
+.container-fluid {
+  padding-left: 85px;
+  padding-top: 28px; }
+  @media (max-width: 991px) {
+    .container-fluid {
+      padding-top: 40px; } }
+  @media (max-width: 768px) {
+    .container-fluid {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 40px; } }
+
 .navbar {
   border-bottom: 1px solid #E6E6E6;
   background-color: #F8F8F8; }
+  @media (max-width: 768px) {
+    .navbar {
+      display: none; } }
 
 .sidebar {
   position: fixed;
@@ -89,8 +107,11 @@ a:focus {
     .sidebar__link--selected {
       background-color: #FF7616;
       border-radius: 10px; }
-      .sidebar__link--selected--svg path {
+      .sidebar__link--selected svg path {
         fill: white; }
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none; } }
 
 .button {
   display: block;
@@ -110,52 +131,86 @@ a:focus {
     background-size: 10px;
     background-image: url("../../images/icons/arrow_next.svg");
     background-repeat: no-repeat; }
+  .button--dropdown {
+    background-size: 10px;
+    background-image: url("../../images/icons/arrow_down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px 0px 0px 35px; }
 
-.box {
-  max-width: 200px;
-  width: 100%;
-  height: 200px;
-  background-color: #fff;
-  border-bottom-left-radius: 12.8px;
-  border-bottom-right-radius: 12.8px;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.0250765);
-  cursor: pointer; }
-  .box .text--small {
-    margin-bottom: 30px; }
-  .box--selected {
-    max-width: 235px;
+.card {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.0250765); }
+  .card__list {
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .card__list__image {
+      padding-right: 15px; }
+    .card__list__name {
+      width: 100%;
+      max-width: 125px;
+      min-width: 0px; }
+    .card__list__address {
+      width: 100%;
+      max-width: 250px;
+      min-width: 0px; }
+    .card__list--padding {
+      padding: 23px 0px; }
+  .card--no-bg {
+    background-color: transparent; }
+  .card--no-br {
+    border: none; }
+  .card--selected {
     height: 235px;
     background-color: #0052B4; }
-    .box--selected h4, .box--selected .text--small {
-      margin: 8px 0 0 0; }
-    .box--selected #box-chart {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      margin-bottom: 20px;
-      width: 228px !important; }
+  @media (max-width: 991px) {
+    .card {
+      border-radius: 12.8px;
+      margin-bottom: 20px; } }
 
-.sales-report__custom-tr {
-  cursor: pointer;
-  transition: 0.2s ease-in; }
-  .sales-report__custom-tr:hover {
-    background-color: #fff;
-    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.03); }
+.sales-report {
+  padding: 15px; }
+  .sales-report__custom-tr {
+    cursor: pointer;
+    transition: 0.2s ease-in; }
+    .sales-report__custom-tr:hover {
+      background-color: #fff;
+      box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.03); }
+  @media (max-width: 768px) {
+    .sales-report {
+      margin-top: 48px; } }
 
-.price-stats {
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 10px;
-  margin-top: 48px; }
-
-.border-line {
-  width: 1px;
-  height: 270px;
-  margin: 0px 15px;
-  background-color: #E6E6E6; }
-  @media (min-width: 768px) {
-    .border-line {
-      display: none; } }
+.mobile-menu {
+  display: none;
+  padding: 17px 10px;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .mobile-menu {
+      display: flex; } }
+  .mobile-menu .hamburger {
+    padding: 0px 0px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible; }
+    .mobile-menu .hamburger :focus {
+      outline: 0 !important; }
+  .mobile-menu .hamburger-box {
+    width: 35px;
+    height: 14px;
+    display: inline-block;
+    position: relative; }
+    .mobile-menu .hamburger-box span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #FF7616;
+      border-radius: 3px; }
 
 .d--in-t {
   display: inline-table; }
@@ -226,6 +281,9 @@ a:focus {
 .text--align--center {
   text-align: center; }
 
+.text--align--right {
+  text-align: right; }
+
 .spacer--down--xsml {
   margin-bottom: 15px; }
 
@@ -233,13 +291,22 @@ a:focus {
   margin-bottom: 25px; }
 
 .spacer--down--med {
-  margin-bottom: 40px; }
+  margin-bottom: 48px; }
 
 .spacer--up--sml {
   margin-top: 25px; }
 
+.spacer--up--med {
+  margin-top: 48px; }
+
+.spacer--up--lrg {
+  margin-top: 103px; }
+  @media (max-width: 991px) {
+    .spacer--up--lrg {
+      margin-top: 20px; } }
+
 .spacer--left--lrg {
-  margin-left: 85px; }
+  margin-left: 88px; }
 
 .spacer--center {
   margin-left: auto;
@@ -247,6 +314,30 @@ a:focus {
 
 .pg--reset {
   padding: 0; }
+
+.pg--all--xxs {
+  padding: 10px; }
+
+.pg--all--xs {
+  padding: 15px; }
+
+.pg--all--s {
+  padding: 20px; }
+
+.pg--all--med {
+  padding: 40px; }
+  @media (max-width: 991px) {
+    .pg--all--med {
+      padding: 15px; } }
+
+.pg--all--lrg {
+  padding: 55px; }
+
+.pg--all--not--down {
+  padding: 40px 40px 0px 40px; }
+  @media (max-width: 991px) {
+    .pg--all--not--down {
+      padding: 15px; } }
 
 .pg--top--xxs {
   padding-top: 10px; }
@@ -288,14 +379,21 @@ a:focus {
   padding-left: 25px; }
 
 .pg--left--lrg {
-  padding-left: 100px; }
+  padding-left: 85px; }
+
+.border--all {
+  border-radius: 10px; }
+
+.border--down--left--right {
+  border-bottom-left-radius: 12.8px;
+  border-bottom-right-radius: 12.8px; }
 
 .col-sm-1 {
   flex: 0 0 70px !important;
   max-width: 70px !important; }
 
 .table th, .table td {
-  padding: 16px 8px;
+  padding: 25px 8px;
   border: none; }
 
 .table thead th {
